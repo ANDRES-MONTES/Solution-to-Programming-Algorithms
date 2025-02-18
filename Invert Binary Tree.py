@@ -1,12 +1,13 @@
 
 def invertTree(root:object) -> object:
+    if not root:
+        return
+    
     if root.left == None and root.right == None:
         return root
     
     
     root.left, root.right = invertTree(root.right), invertTree(root.left)
-    
-    
     
     return root
     
