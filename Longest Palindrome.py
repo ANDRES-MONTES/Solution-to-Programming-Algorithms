@@ -4,7 +4,7 @@ def longestPalindrome(s: str) -> int:
     inpares = False
     maximo = 0
     
-    
+    print(info)
     for i, j in info.items():
         if j % 2 == 0:
             maximo += j
