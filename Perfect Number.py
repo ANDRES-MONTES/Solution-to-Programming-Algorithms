@@ -26,6 +26,7 @@ def checkPerfectNumber(num: int) -> bool:
             
     print(re_potencias)
     output = []
+    #Multiplica todos los valores con todos y cada uno de los siguientes 
     for i in range(len(re_potencias) - 1):
         j = 0
         while j < len(re_potencias[i]):
