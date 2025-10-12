@@ -5,8 +5,8 @@ def detectCapitalUse(word: str) -> bool:
         return True
     else:
         counter = 0
-        for i in word:
-            if i.isupper():
+        for i in word: 
+            if i.isupper(): 
                 counter += 1
         if (counter > 1) or (word[0].islower()):
             return False
@@ -15,5 +15,5 @@ def detectCapitalUse(word: str) -> bool:
 
 if __name__ == '__main__':
     word = "USA"
-    result = detectCapitalUse()
+    result = detectCapitalUse(word)
     print(result)
